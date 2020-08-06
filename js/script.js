@@ -219,7 +219,7 @@ window.addEventListener('DOMContentLoaded', function () {
       personsSum = +this.value;
       console.log("personsSum =" +personsSum);
       console.log("daysSum = " + daysSum);
-      
+
 
       if (restDays.value == '' || restDays.value < 1) {
         totalValue.innerHTML = 0;
@@ -234,8 +234,6 @@ window.addEventListener('DOMContentLoaded', function () {
 
   restDays.addEventListener('change', function () {
     daysSum = +this.value;
-    console.log("daysSum = " + daysSum);
-    
 
     if (persons.value == '' || persons.value < 1) {
       totalValue.innerHTML = 0;
@@ -245,10 +243,8 @@ window.addEventListener('DOMContentLoaded', function () {
     }
 
     total = (daysSum * personsSum) * 4000;
-    console.log('total =' + total);
     totalValue.innerHTML = total;
   })
-
 
   place.addEventListener('change', function () {
     if (restDays.value == '' || persons.value == '') {
